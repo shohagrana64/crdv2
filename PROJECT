@@ -1,0 +1,7 @@
+domain: example.com
+repo: github.com/shohagrana64/crdv2
+resources:
+- group: rana
+  kind: ExampleCrd
+  version: v1alpha1
+version: "2"

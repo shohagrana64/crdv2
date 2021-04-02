@@ -1,0 +1,20 @@
+# permissions for end users to view examplecrds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: examplecrd-viewer-role
+rules:
+- apiGroups:
+  - rana.example.com
+  resources:
+  - examplecrds
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - rana.example.com
+  resources:
+  - examplecrds/status
+  verbs:
+  - get

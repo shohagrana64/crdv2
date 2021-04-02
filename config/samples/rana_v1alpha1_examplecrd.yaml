@@ -1,0 +1,7 @@
+apiVersion: rana.example.com/v1alpha1
+kind: ExampleCrd
+metadata:
+  name: examplecrd-sample
+spec:
+  # Add fields here
+  foo: bar
